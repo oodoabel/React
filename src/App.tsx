@@ -1,13 +1,12 @@
-import Alert from "./components/Alert";
 import Button from "./components/button";
-
-export default function App() {
+function App() {
   return (
     <div>
-      <Alert>Hello World</Alert>
-      <Button holder="Buzzzzzzz" />
+      <Button onClick={() => console.log("Clicked")} color="success">
+        My Button
+      </Button>
     </div>
   );
 }
 
-// export default App;
+export default App;
